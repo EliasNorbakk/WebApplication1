@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gruppe 6</title>
+    <script type="importmap"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <nav class="site-nav site-nav-left">
+                <a asp-page="/Medlemmer">Medlemmer</a>
+                <a asp-page="/CVer">CV-er</a>
+                <a asp-page="/Promovideo">Promovideo</a>
+            </nav>
+
+            <a class="site-logo" asp-page="/Index">
+                <img src="~/images/logo.png" alt="Gruppe 6 logo" />
+            </a>
+
+            <nav class="site-nav site-nav-right">
+                <a asp-page="/Prosjekter">Prosjekter</a>
+                <a asp-page="/Bacheloroppgave">Bacheloroppgave</a>
+                <a asp-page="/Kontakt">Kontakt oss</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2026 - Gruppe 6
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
