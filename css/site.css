@@ -613,3 +613,75 @@ main { padding-bottom: 0; }
     .hero--photo .hero-inner { padding-top: 7rem; }
 }
 
+
+/* Bacheloroppgave */
+.bachelor-card {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--orange);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2.5rem 2.25rem;
+}
+.bachelor-logo {
+    display: inline-flex;
+    padding: .9rem 1.25rem;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: .75rem;
+    margin-bottom: 1.5rem;
+}
+.bachelor-logo img { height: 34px; width: auto; }
+.bachelor-label {
+    margin: 0 0 .5rem; font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--orange-dark);
+}
+.bachelor-title { font-family: var(--serif); font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 .35rem; }
+.bachelor-tagline { margin: 0 0 1.5rem; font-size: 1.15rem; font-weight: 700; color: var(--navy); }
+
+.bachelor-section { margin-top: 4rem; }
+
+.bachelor-steps {
+    list-style: none; margin: 0; padding: 0;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem;
+    counter-reset: none;
+}
+.bachelor-steps li {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+}
+.bachelor-steps h3 { font-family: var(--serif); font-size: 1.25rem; margin: .5rem 0 .5rem; }
+.bachelor-steps p { margin: 0; }
+
+.bachelor-list { margin: 0; padding: 0; list-style: none; }
+.bachelor-list li {
+    position: relative;
+    padding: .9rem 0 .9rem 1.75rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.05rem;
+}
+.bachelor-list li:last-child { border-bottom: 0; }
+.bachelor-list li::before {
+    content: '';
+    position: absolute; left: .25rem; top: 1.45rem;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--orange);
+}
+
+.bachelor-tags {
+    list-style: none; margin: 0; padding: 0;
+    display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem;
+}
+.bachelor-tags li {
+    font-weight: 700; font-size: .9rem; color: var(--navy);
+    background: var(--white); border: 1px solid var(--line);
+    padding: .45rem 1rem; border-radius: 999px;
+}
+
+@media (max-width: 680px) {
+    .bachelor-card { padding: 1.75rem 1.5rem; }
+    .bachelor-steps { grid-template-columns: 1fr; }
+    .bachelor-section { margin-top: 3rem; }
+}

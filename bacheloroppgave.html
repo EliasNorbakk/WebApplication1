@@ -4,9 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bacheloroppgave | Alfa Omega</title>
-    <meta name="description" content="Bacheloroppgaven til Alfa Omega." />
+    <meta name="description" content="Bacheloroppgaven til Alfa Omega: en KI-basert informasjonsdirigent for maritim sektor, i samarbeid med Knowit." />
     <meta property="og:title" content="Bacheloroppgave | Alfa Omega" />
-    <meta property="og:description" content="Bacheloroppgaven til Alfa Omega." />
+    <meta property="og:description" content="Bacheloroppgaven til Alfa Omega: en KI-basert informasjonsdirigent for maritim sektor, i samarbeid med Knowit." />
     <meta property="og:image" content="https://thelyng.dev/images/opt/logo.png" />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#15263F" />
@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=2" />
     <link rel="preload" href="fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/site.css?v=15" />
+    <link rel="stylesheet" href="css/site.css?v=16" />
 </head>
 <body>
     <a class="skip-link" href="#innhold">Hopp til innhold</a>
@@ -48,13 +48,82 @@
     <main id="innhold">
         <div class="page-head">
             <h1 class="page-title">Bacheloroppgave</h1>
+            <p class="page-intro">Bachelorprosjekt i IS-314 ved Universitetet i Agder, i samarbeid med Knowit.</p>
         </div>
         <div class="narrow">
-            <div class="soon-card">
-                <p class="soon-label">Under arbeid</p>
-                <p>Vi er i gang med å finne oppgave og samarbeidspartner. Har dere en problemstilling som kan passe, vil vi gjerne høre fra dere.</p>
-                <a class="btn btn-secondary" href="kontakt.html">Kontakt oss</a>
-            </div>
+            <article class="bachelor-card">
+                <div class="bachelor-logo">
+                    <img src="images/opt/knowit-logo.svg" alt="Knowit" width="125" height="30" />
+                </div>
+                <p class="bachelor-label">Oppdragsgiver: Knowit</p>
+                <h2 class="bachelor-title">Maritime Information Retrieval and Information Conductor</h2>
+                <p class="bachelor-tagline">Riktig melding til riktig båt</p>
+                <p class="about-text">
+                    Båter og utstyret om bord får i dag langt flere signaler og meldinger enn de har bruk for.
+                    Sammen med Knowit utvikler vi en KI-basert informasjonsdirigent som henter, filtrerer og prioriterer
+                    meldingene, slik at hvert fartøy og hver maskinvare får akkurat det som er relevant for den.
+                </p>
+                <p class="about-text">
+                    Målet er en løsning som gjør kommunikasjonen til sjøs raskere, billigere og tryggere. En viktig del av
+                    oppgaven er å redusere antall input- og output-tokens per signal uten å miste viktig informasjon,
+                    og å ta egne arkitekturvalg underveis.
+                </p>
+            </article>
+
+            <section class="bachelor-section">
+                <h2 class="section-title">Slik fungerer dirigenten</h2>
+                <ol class="bachelor-steps">
+                    <li>
+                        <span class="skill-num">01</span>
+                        <h3>Hente</h3>
+                        <p>Samler inn og indekserer meldinger fra båter, sensorer og annen maritim informasjon.</p>
+                    </li>
+                    <li>
+                        <span class="skill-num">02</span>
+                        <h3>Sortere</h3>
+                        <p>En KI-modell klassifiserer og prioriterer signalene og avgjør hva som er viktig for hvem.</p>
+                    </li>
+                    <li>
+                        <span class="skill-num">03</span>
+                        <h3>Levere</h3>
+                        <p>Ruter riktig melding videre til riktig fartøy og riktig maskinvare.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="bachelor-section">
+                <h2 class="section-title">Hva vi skal gjøre</h2>
+                <ul class="bachelor-list">
+                    <li>Kartlegge signaltyper og datakilder i maritim sektor.</li>
+                    <li>Bygge innhenting og indeksering av meldinger og maritim informasjon.</li>
+                    <li>Utforske RAG-arkitekturer for informasjonshentingen, blant annet re-ranking av søkeresultater og semantisk søk sammenlignet med grafbasert søk.</li>
+                    <li>Utvikle dirigentlogikken som klassifiserer, prioriterer og ruter signaler.</li>
+                    <li>Teste løsningen i et simulert scenario, og evaluere den mot dagens løsning.</li>
+                </ul>
+            </section>
+
+            <section class="bachelor-section">
+                <h2 class="section-title">Teknologi</h2>
+                <ul class="bachelor-tags" aria-label="Teknologier i prosjektet">
+                    <li>KI og språkmodeller</li>
+                    <li>RAG</li>
+                    <li>Semantisk og grafbasert søk</li>
+                    <li>MQTT</li>
+                    <li>Unified Namespace</li>
+                    <li>Web of Things</li>
+                    <li>Simulering</li>
+                </ul>
+            </section>
+
+            <section class="bachelor-section">
+                <h2 class="section-title">Leveranser</h2>
+                <ul class="bachelor-list">
+                    <li>Prototype av informasjonsdirigenten med visualisering av signalflyten.</li>
+                    <li>Sammenligning av RAG-variantene: re-ranking, semantisk søk og grafbasert søk.</li>
+                    <li>Evaluering av ruting og prioritering.</li>
+                    <li>Kildekode, dokumentasjon og sluttpresentasjon.</li>
+                </ul>
+            </section>
         </div>
     </main>
 
@@ -69,6 +138,6 @@
         <p class="footer-copy">&copy; 2026 Alfa Omega</p>
     </footer>
 
-    <script src="js/site.js?v=15"></script>
+    <script src="js/site.js?v=16"></script>
 </body>
 </html>

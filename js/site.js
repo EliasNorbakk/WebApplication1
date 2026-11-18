@@ -27,7 +27,7 @@
     var groups = [
         '.section-title', '.about-text', '.page-intro',
         '.skill-grid > *', '.video-frame', '.team-grid > *', '.section-intro', '.member-card', '.contact-primary',
-        '.project-section-title', '.project-grid > *', '.soon-card',
+        '.project-section-title', '.project-grid > *', '.soon-card', '.bachelor-card', '.bachelor-steps > *',
         '.cta-band h2', '.cta-band p', '.cta-band .btn'
     ];
     var els = document.querySelectorAll(groups.join(','));
